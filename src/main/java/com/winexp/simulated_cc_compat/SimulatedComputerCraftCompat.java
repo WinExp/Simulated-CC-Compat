@@ -14,6 +14,5 @@ public class SimulatedComputerCraftCompat {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public SimulatedComputerCraftCompat(IEventBus modEventBus, ModContainer modContainer) {
-
     }
 }

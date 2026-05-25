@@ -1,7 +1,7 @@
 package com.winexp.simulated_cc_compat.mixin_interface;
 
 public interface WheelMountAccessor {
-    int aero_extra$getStrength();
+    int sccc$getStrength();
 
-    void aero_extra$setStrength(int strength);
+    void sccc$setStrength(int strength);
 }

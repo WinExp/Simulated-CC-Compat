@@ -1,7 +1,7 @@
 package com.winexp.simulated_cc_compat.mixin_interface;
 
 public interface HotAirBurnerAccessor {
-    int aero_extra$getHotAirAmount();
+    int sccc$getHotAirAmount();
 
-    void aero_extra$setHotAirAmount(int amount);
+    void sccc$setHotAirAmount(int amount);
 }

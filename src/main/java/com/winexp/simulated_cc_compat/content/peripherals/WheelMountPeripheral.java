@@ -12,12 +12,12 @@ public class WheelMountPeripheral extends SimPeripheral<WheelMountBlockEntity> {
 
     @LuaFunction
     public final int getStrength() {
-        return ((WheelMountAccessor) this.blockEntity).aero_extra$getStrength();
+        return ((WheelMountAccessor) this.blockEntity).sccc$getStrength();
     }
 
     @LuaFunction
     public final void setStrength(int strength) {
-        ((WheelMountAccessor) this.blockEntity).aero_extra$setStrength(strength);
+        ((WheelMountAccessor) this.blockEntity).sccc$setStrength(strength);
     }
 
     @Override

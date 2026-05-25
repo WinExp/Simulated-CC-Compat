@@ -12,12 +12,12 @@ public class SteamVentBlockEntityMixin implements HotAirBurnerAccessor {
     protected ScrollValueBehaviour steamAmountBehaviour;
 
     @Override
-    public int aero_extra$getHotAirAmount() {
+    public int sccc$getHotAirAmount() {
         return this.steamAmountBehaviour.getValue();
     }
 
     @Override
-    public void aero_extra$setHotAirAmount(int amount) {
+    public void sccc$setHotAirAmount(int amount) {
         this.steamAmountBehaviour.setValue(amount);
     }
 }

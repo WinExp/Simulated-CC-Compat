@@ -12,12 +12,12 @@ public class HotAirBurnerBlockEntityMixin implements HotAirBurnerAccessor {
     protected ScrollValueBehaviour hotAirAmountBehaviour;
 
     @Override
-    public int aero_extra$getHotAirAmount() {
+    public int sccc$getHotAirAmount() {
         return this.hotAirAmountBehaviour.getValue();
     }
 
     @Override
-    public void aero_extra$setHotAirAmount(int amount) {
+    public void sccc$setHotAirAmount(int amount) {
         this.hotAirAmountBehaviour.setValue(amount);
     }
 }

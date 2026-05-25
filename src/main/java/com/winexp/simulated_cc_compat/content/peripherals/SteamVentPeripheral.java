@@ -12,12 +12,12 @@ public class SteamVentPeripheral extends SimPeripheral<SteamVentBlockEntity> {
 
     @LuaFunction
     public final int getSteamAmount() {
-        return ((HotAirBurnerAccessor) this.blockEntity).aero_extra$getHotAirAmount();
+        return ((HotAirBurnerAccessor) this.blockEntity).sccc$getHotAirAmount();
     }
 
     @LuaFunction
     public final void setSteamAmount(int amount) {
-        ((HotAirBurnerAccessor) this.blockEntity).aero_extra$setHotAirAmount(amount);
+        ((HotAirBurnerAccessor) this.blockEntity).sccc$setHotAirAmount(amount);
     }
 
     @Override

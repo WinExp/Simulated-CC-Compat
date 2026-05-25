@@ -12,49 +12,49 @@ import java.lang.reflect.Method;
 @Mixin(WheelMountBlockEntity.class)
 public abstract class WheelMountBlockEntityMixin implements WheelMountAccessor {
     @Unique
-    private Field aero_extra$strengthField;
+    private Field sccc$strengthField;
     @Unique
-    private Method aero_extra$getValueMethod;
+    private Method sccc$getValueMethod;
     @Unique
-    private Method aero_extra$setValueMethod;
+    private Method sccc$setValueMethod;
 
     @Unique
-    private void aero_extra$loadFieldsAndMethods() {
-        if (this.aero_extra$strengthField != null) return;
+    private void sccc$loadFieldsAndMethods() {
+        if (this.sccc$strengthField != null) return;
         try {
             Class<?> outer = WheelMountBlockEntity.class;
             Field field = outer.getDeclaredField("strength");
             field.setAccessible(true);
-            this.aero_extra$strengthField = field;
+            this.sccc$strengthField = field;
 
             Class<?> clazz = ScrollValueBehaviour.class;
             Method getValue = clazz.getDeclaredMethod("getValue");
             getValue.setAccessible(true);
-            this.aero_extra$getValueMethod = getValue;
+            this.sccc$getValueMethod = getValue;
 
             Method setValue = clazz.getDeclaredMethod("setValue", int.class);
             setValue.setAccessible(true);
-            this.aero_extra$setValueMethod = setValue;
+            this.sccc$setValueMethod = setValue;
         } catch (Exception e) {
             throw new AssertionError(e);
         }
     }
 
     @Override
-    public int aero_extra$getStrength() {
-        this.aero_extra$loadFieldsAndMethods();
+    public int sccc$getStrength() {
+        this.sccc$loadFieldsAndMethods();
         try {
-            return (int) this.aero_extra$getValueMethod.invoke(this.aero_extra$strengthField.get(this));
+            return (int) this.sccc$getValueMethod.invoke(this.sccc$strengthField.get(this));
         } catch (Exception e) {
             throw new AssertionError(e);
         }
     }
 
     @Override
-    public void aero_extra$setStrength(int strength) {
-        this.aero_extra$loadFieldsAndMethods();
+    public void sccc$setStrength(int strength) {
+        this.sccc$loadFieldsAndMethods();
         try {
-            this.aero_extra$setValueMethod.invoke(this.aero_extra$strengthField.get(this), strength);
+            this.sccc$setValueMethod.invoke(this.sccc$strengthField.get(this), strength);
         } catch (Exception e) {
             throw new AssertionError(e);
         }
