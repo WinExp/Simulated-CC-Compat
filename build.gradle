@@ -36,7 +36,7 @@ modrinth {
     gameVersions = [minecraft_version] // Must be an array, even with only one version
     dependencies { // A special DSL for creating dependencies
         required.project "create-aeronautics"
-        optional.project "cc-tweaked"
+        required.project "cc-tweaked"
     }
     syncBodyFrom = rootProject.file("README.md").text
 }
