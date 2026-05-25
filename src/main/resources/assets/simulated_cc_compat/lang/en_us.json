@@ -1,0 +1,13 @@
+{
+  "itemGroup.simulated_cc_compat": "Example Mod Tab",
+  "block.simulated_cc_compat.example_block": "Example Block",
+  "item.simulated_cc_compat.example_item": "Example Item",
+
+  "simulated_cc_compat.configuration.title": "Simulated: ComputerCraft Compat Configs",
+  "simulated_cc_compat.configuration.section.simulated_cc_compat.common.toml": "Simulated: ComputerCraft Compat Configs",
+  "simulated_cc_compat.configuration.section.simulated_cc_compat.common.toml.title": "Simulated: ComputerCraft Compat Configs",
+  "simulated_cc_compat.configuration.items": "Item List",
+  "simulated_cc_compat.configuration.logDirtBlock": "Log Dirt Block",
+  "simulated_cc_compat.configuration.magicNumberIntroduction": "Magic Number Text",
+  "simulated_cc_compat.configuration.magicNumber": "Magic Number"
+}

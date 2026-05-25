@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "com.winexp.simulated_cc_compat.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "HotAirBurnerBlockEntityMixin",
+    "SteamVentBlockEntityMixin",
+    "WheelMountBlockEntityMixin"
+  ],
+  "mixinextras": {
+    "minVersion": "0.5.3"
+  },
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
