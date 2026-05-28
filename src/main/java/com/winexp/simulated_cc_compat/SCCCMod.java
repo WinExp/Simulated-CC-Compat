@@ -50,8 +50,7 @@ public class SCCCMod {
             if (rarity == Rarity.EPIC)
                 color = new FontHelper.Palette(TooltipHelper.styleFromColor(SimColors.EPIC_OURPLE), TooltipHelper.styleFromColor(rarity.color()));
 
-            return new ItemDescription
-                    .Modifier(item, color)
+            return new ItemDescription.Modifier(item, color)
                     .andThen(TooltipModifier.mapNull(KineticStats.create(item)));
         });
     }

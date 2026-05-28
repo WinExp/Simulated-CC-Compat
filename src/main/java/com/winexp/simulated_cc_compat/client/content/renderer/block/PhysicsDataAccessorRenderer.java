@@ -35,9 +35,9 @@ public class PhysicsDataAccessorRenderer extends SmartBlockEntityRenderer<Physic
         BlockState state = be.getBlockState();
         VertexConsumer vb = buffer.getBuffer(RenderType.solid());
         SuperByteBuffer innerCube = CachedBuffers.partial(SCCCPartialModels.PHYSICS_DATA_ACCESSOR_INNER_CUBE, state);
-        float yRot = -2 * AnimationTickHolder.getRenderTime(be.getLevel());
+        float yRot = 2 * AnimationTickHolder.getRenderTime(be.getLevel());
         Quaternionf rotation = new Quaternionf(be.getPrevOrientation().slerp(be.getOrientation(), partialTicks, new Quaterniond()).invert())
-                .rotateY(yRot * Mth.DEG_TO_RAD);
+                .rotateY(-yRot * Mth.DEG_TO_RAD);
         Vec3 baseTranslation = JOMLConversion.toMojang(rotation.transform(-1, -1, -1, new Vector3d()));
         innerCube
                 .translate(baseTranslation.scale(1.5))
