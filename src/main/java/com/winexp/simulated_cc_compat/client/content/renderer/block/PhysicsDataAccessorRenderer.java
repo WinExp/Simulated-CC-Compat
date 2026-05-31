@@ -16,13 +16,10 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.util.Mth;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.api.distmarker.OnlyIn;
 import org.joml.Quaterniond;
 import org.joml.Quaternionf;
 import org.joml.Vector3d;
 
-@OnlyIn(Dist.CLIENT)
 public class PhysicsDataAccessorRenderer extends SmartBlockEntityRenderer<PhysicsDataAccessorBlockEntity> {
     public PhysicsDataAccessorRenderer(BlockEntityRendererProvider.Context context) {
         super(context);
