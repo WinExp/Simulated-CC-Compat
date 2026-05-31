@@ -88,28 +88,28 @@ config="${mod_id}.mixins.json"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies."${mod_id}"]]
+[[dependencies.${mod_id}]]
     modId = "simulated"
     type = "required"
     versionRange = "[1,)"
     ordering = "NONE"
     side = "BOTH"
 
-[[dependencies."${mod_id}"]]
+[[dependencies.${mod_id}]]
     modId = "aeronautics"
     type = "required"
     versionRange = "[1,)"
     ordering = "NONE"
     side = "BOTH"
 
-[[dependencies."${mod_id}"]]
+[[dependencies.${mod_id}]]
     modId = "offroad"
     type = "required"
     versionRange = "[1,)"
     ordering = "NONE"
     side = "BOTH"
 
-[[dependencies."${mod_id}"]]
+[[dependencies.${mod_id}]]
     modId = "computercraft"
     type = "required"
     versionRange = "[1,)"

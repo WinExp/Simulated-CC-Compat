@@ -1,13 +1,11 @@
 package com.winexp.simulated_cc_compat.content.registry;
 
 import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.simibubi.create.foundation.item.render.SimpleCustomRenderer;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.providers.ProviderType;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.nullness.NonNullFunction;
 import com.winexp.simulated_cc_compat.SCCCMod;
-import com.winexp.simulated_cc_compat.client.content.renderer.block.PhysicsDataAccessorItemRenderer;
 import com.winexp.simulated_cc_compat.content.blocks.PhysicsDataAccessorBlock;
 import dev.simulated_team.simulated.registrate.SimulatedRegistrate;
 import net.minecraft.core.BlockPos;
@@ -27,8 +25,7 @@ public class SCCCBlocks {
                     .isRedstoneConductor(SCCCBlocks::never)
                     .isSuffocating(SCCCBlocks::never)
                     .noOcclusion())
-            .item().clientExtension(() -> () -> SimpleCustomRenderer
-                    .create(SCCCBlocks.PHYSICS_DATA_ACCESSOR.asItem(), new PhysicsDataAccessorItemRenderer())).build()
+            .simpleItem()
             .blockstate((ctx, prov) -> prov.simpleBlock(ctx.getEntry(), ((BlockModelBuilder) prov.cubeAll(ctx.getEntry())).renderType("translucent")))
             .register();
 

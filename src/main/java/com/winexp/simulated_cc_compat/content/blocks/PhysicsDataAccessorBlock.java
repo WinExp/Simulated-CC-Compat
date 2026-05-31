@@ -15,7 +15,7 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class PhysicsDataAccessorBlock extends BaseEntityBlock implements IBE<PhysicsDataAccessorBlockEntity> {
-    private static final MapCodec<PhysicsDataAccessorBlock> CODEC = simpleCodec(PhysicsDataAccessorBlock::new);
+    public static final MapCodec<PhysicsDataAccessorBlock> CODEC = simpleCodec(PhysicsDataAccessorBlock::new);
 
     public PhysicsDataAccessorBlock(Properties properties) {
         super(properties);
